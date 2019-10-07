@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Authors>Daniel</Authors>
+    <Company>E+E Elektronik Ges.m.b.H.</Company>
+    <Description>E+E .NET Standard Framework communication components:
+- Protocols: EE31
+- Interfaces: UART, BLE</Description>
+    <Copyright>Copyright © E+E Elektronik Ges.m.b.H.</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>http://at02projects:8080/browse/ITNUGET-5</PackageProjectUrl>
+    <PackageIconUrl>http://at02projects:8080/browse/ITNUGET-5</PackageIconUrl>
+    <PackageTags>E+E netstd framework communication</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0-beta25</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Docs\~%24I Design.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HidSharp" Version="2.1.0" />
+    <PackageReference Include="Plugin.BluetoothLE" Version="6.2.6" />
+    <PackageReference Include="SharpZipLib" Version="1.2.0" />
+    <PackageReference Include="System.IO.Ports" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EplusE.NetStd.Measurement\EplusE.NetStd.Measurement.csproj" />
+    <ProjectReference Include="..\EplusE.NetStd\EplusE.NetStd.csproj" />
+  </ItemGroup>
+
+</Project>

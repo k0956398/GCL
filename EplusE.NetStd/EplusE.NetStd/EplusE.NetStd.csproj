@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Klaus, Daniel</Authors>
+    <Company>E+E Elektronik Ges.m.b.H.</Company>
+    <Copyright>Copyright © E+E Elektronik Ges.m.b.H.</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>http://at02projects:8080/browse/ITNUGET-5</PackageProjectUrl>
+    <PackageIconUrl>http://at02projects:8080/browse/ITNUGET-5</PackageIconUrl>
+    <PackageTags>E+E netstd framework base</PackageTags>
+    <Description>E+E .NET Standard Framework basic components:
+- Converters
+- CRC
+- Extensions
+- Helpers</Description>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Version V1.00.001.0000
+----------------------
+- Initial version of .net Standard version of EplusE basic components</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extension\ObjectExtension.cs" />
+    <Compile Remove="Helper\AppHelper.cs" />
+    <Compile Remove="Helper\AppSettings.cs" />
+    <Compile Remove="Helper\AppSettingsFromConfigurationManager.cs" />
+    <Compile Remove="Helper\AppSettingsFromINI.cs" />
+    <Compile Remove="Helper\DateTimeHelper.cs" />
+    <Compile Remove="Helper\FileLogger.cs" />
+    <Compile Remove="Helper\IAppSettings.cs" />
+    <Compile Remove="Helper\ReflectionHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CRC\" />
+    <Folder Include="DataTypeConverter\" />
+    <Folder Include="Encoding\" />
+    <Folder Include="Helper\" />
+  </ItemGroup>
+
+</Project>

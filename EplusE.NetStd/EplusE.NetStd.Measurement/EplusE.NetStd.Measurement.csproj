@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Daniel</Authors>
+    <Company>E+E Elektronik Ges.m.b.H.</Company>
+    <Description>E+E Framework measurement components:
+- MVClass: measurand class enumerator
+- MVClassHelper: handle MVClass string representations
+- MVClassOrMVCode: container class
+- MVCode: measurement value enumerator (coordinated measurement values table)
+- MVCodeHelper: handle MVCode string representations
+- MVCodeTranslationData
+- MVDataType: measurement value data types enumerator
+- MVEnumerator: measurment value enumerator class
+- SIUSUnit: unit system enumerator</Description>
+    <Copyright>Copyright © E+E Elektronik Ges.m.b.H.</Copyright>
+    <PackageProjectUrl>http://at02projects:8080/browse/ITNUGET-7</PackageProjectUrl>
+    <PackageIconUrl>http://at02projects:8080/browse/ITNUGET-7</PackageIconUrl>
+    <PackageTags>E+E netstd framework measurement</PackageTags>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Version V1.00.001.0000
+----------------------
+- Initial version</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\Properties\**" />
+    <EmbeddedResource Remove="src\Properties\**" />
+    <None Remove="src\Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\EplusE.Measurement.nuspec" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EplusE.NetStd\EplusE.NetStd.csproj" />
+  </ItemGroup>
+
+</Project>
